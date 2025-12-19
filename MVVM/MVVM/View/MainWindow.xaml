@@ -1,0 +1,41 @@
+﻿<Window x:Class="MVVM.View.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MVVM.View"
+        xmlns:util="clr-namespace:MVVM.Utilities"
+        xmlns:vm="clr-namespace:MVVM.ViewModel"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" FocusManager.FocusedElement="{Binding ElementName=txtFirstName}">
+    <Window.InputBindings>
+        <KeyBinding Key="C" Modifiers="Alt" Command="{Binding ClearNameCommand}" />
+
+        <KeyBinding Key="Esc" Command="{Binding ClearNameCommand}" />
+    </Window.InputBindings>
+    <Window.DataContext>
+        <vm:UserViewModel/>
+    </Window.DataContext>
+    <Grid>
+        
+        <StackPanel Margin="10">
+            <Label Content="First Name:"/>
+            <TextBox Height="30" Margin="0,0,0,10"
+                     Text="{Binding FirstName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged} "
+                     util:FocusExtension.IsFocused="{Binding IsFocused}"/>
+
+            <Label Content="Last Name:"/>
+            <TextBox Height="30" Text="{Binding LastName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,0,10"/>
+
+            <Label Content="Full Name (Calculated):"/>
+            <TextBlock Text="{Binding FullName}" 
+                FontSize="20" 
+                FontWeight="Bold" 
+                Foreground="Blue"/>
+            <Button Content="Clear Names" 
+            Command="{Binding ClearNameCommand}" 
+            Margin="0,20,0,0" 
+            Height="30"/>
+        </StackPanel>
+    </Grid>
+</Window>
