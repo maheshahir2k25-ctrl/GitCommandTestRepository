@@ -19,11 +19,10 @@
     <Grid>
         
         <StackPanel Margin="10">
-            <TextBlock Text="Hello Mahesh !!" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBlock Text="Hello Anand !!" VerticalAlignment="Center" HorizontalAlignment="Center" />
             <Label Content="First Name:"/>
             <TextBox Height="30" Margin="0,0,0,10"
-                     Text="{Binding FirstName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged} "
-                     util:FocusExtension.IsFocused="{Binding IsFocused}"/>
+                     Text="{Binding FirstName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" util:FocusExtension.IsFocused="{Binding IsFocused}"/>
 
             <Label Content="Last Name:"/>
             <TextBox Height="30" Text="{Binding LastName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,0,10"/>
