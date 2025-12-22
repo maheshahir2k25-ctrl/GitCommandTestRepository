@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MVVM.Model
+namespace MVVM.Model 
 {
     public class User
     {
-        public string FirstName { get; set; }
+        public string  FirstName { get; set; }
         public string LastName { get; set; }
     }
 }
