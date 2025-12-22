@@ -17,9 +17,9 @@
         <vm:UserViewModel/>
     </Window.DataContext>
     <Grid>
-        
+
         <StackPanel Margin="10">
-            <TextBlock Text="Title Update - Hello Mahesh !!-2" VerticalAlignment="Center" HorizontalAlignment="Center" />
+            <TextBlock Text="Title Update - Hello Mahesh !!" VerticalAlignment="Center" HorizontalAlignment="Center" />
             <Label Content="First Name:"/>
             <TextBox Height="30" Margin="0,0,0,10"
                      Text="{Binding FirstName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" util:FocusExtension.IsFocused="{Binding IsFocused}"/>
@@ -36,6 +36,7 @@
             Command="{Binding ClearNameCommand}" 
             Margin="0,20,0,0" 
             Height="30"/>
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center"><Bold>Footer Added to Main [for Rebase Testing]</Bold></TextBlock>
         </StackPanel>
     </Grid>
 </Window>
