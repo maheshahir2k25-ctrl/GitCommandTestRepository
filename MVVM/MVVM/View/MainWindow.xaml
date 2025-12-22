@@ -7,7 +7,7 @@
         xmlns:util="clr-namespace:MVVM.Utilities"
         xmlns:vm="clr-namespace:MVVM.ViewModel"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" FocusManager.FocusedElement="{Binding ElementName=txtFirstName}" Background="HotPink">
+        Title="MainWindow" Height="450" Width="800" FocusManager.FocusedElement="{Binding ElementName=txtFirstName}">
     <Window.InputBindings>
         <KeyBinding Key="C" Modifiers="Alt" Command="{Binding ClearNameCommand}" />
 
