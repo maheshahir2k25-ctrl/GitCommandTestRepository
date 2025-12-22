@@ -7,7 +7,7 @@
         xmlns:util="clr-namespace:MVVM.Utilities"
         xmlns:vm="clr-namespace:MVVM.ViewModel"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" FocusManager.FocusedElement="{Binding ElementName=txtFirstName}" Background="Red">
+        Title="MainWindow" Height="450" Width="800" FocusManager.FocusedElement="{Binding ElementName=txtFirstName}">
     <Window.InputBindings>
         <KeyBinding Key="C" Modifiers="Alt" Command="{Binding ClearNameCommand}" />
 
@@ -19,7 +19,7 @@
     <Grid>
         
         <StackPanel Margin="10">
-            <TextBlock Text="Title Update - Hello Mahesh !!-6" VerticalAlignment="Center" HorizontalAlignment="Center" />
+            <TextBlock Text="Title Update - Hello Mahesh !!-2" VerticalAlignment="Center" HorizontalAlignment="Center" />
             <Label Content="First Name:"/>
             <TextBox Height="30" Margin="0,0,0,10"
                      Text="{Binding FirstName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" util:FocusExtension.IsFocused="{Binding IsFocused}"/>
