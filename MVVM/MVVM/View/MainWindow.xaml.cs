@@ -31,6 +31,7 @@ namespace MVVM.View
             //Mahhesh feature-loop-test - Sixth Comment
             //Mahhesh feature-loop-test - Seventh Comment
             //Mahhesh feature-loop-test - Eighth Comment
+            //Mahhesh feature-loop-test - Git bash stash conflict check commit
         }
     }
     
