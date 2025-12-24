@@ -29,6 +29,7 @@ namespace MVVM.View
             //Mahhesh feature-loop-test - Forth Comment
             //Mahhesh feature-loop-test - Fifth Comment
             //Mahhesh feature-loop-test - Sixth Comment
+            //Mahhesh feature-loop-test - Seventh Comment
         }
     }
     
