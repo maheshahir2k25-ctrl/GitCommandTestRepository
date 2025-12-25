@@ -8,6 +8,7 @@
         xmlns:vm="clr-namespace:MVVM.ViewModel"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" FocusManager.FocusedElement="{Binding ElementName=txtFirstName}">
+
     <Window.InputBindings>
         <KeyBinding Key="C" Modifiers="Alt" Command="{Binding ClearNameCommand}" />
 
@@ -24,6 +25,7 @@
             <TextBox Height="30" Margin="0,0,0,10"
                      Text="{Binding FirstName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" util:FocusExtension.IsFocused="{Binding IsFocused}"/>
             <Label Content="Last Name:"/>
+            <Label Content="Final Name:"/>
             <TextBox Height="30" Text="{Binding LastName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,0,10"/>
 
             <Label Content="Full Name (Calculated):"/>
